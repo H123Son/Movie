@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Movie</string>
+    <string name="action_retry">Retry</string>
+    <string name="action_top_rated">Top rated</string>
+    <string name="action_now_playing">Now playing</string>
+    <string name="action_popular">Popular</string>
+    <string name="action_sort_by">Sort by</string>
+    <string name="movie_backdrop_content_description">Movie backdropPath</string>
+    <string name="movie_poster">Movie poster</string>
+    <string name="label_overview">Overview</string>
+    <string name="release_date">Release date</string>
+    <string name="label_votes">%s votes</string>
+    <string name="action_share">Share trailer</string>
+    <string name="action_favorite">Add to favorites</string>
+    <string name="action_remove_from_favorites">Delete from favorites</string>
+    <string name="movie_added_successfully">Movie added to your favorites successfully</string>
+    <string name="movie_removed_successfully">Movie removed from your favorites successfully</string>
+    <string name="unknown_error">Unknown Error</string>
+    <string name="play_icon">Play icon</string>
+    <string name="trailer_thumbnail">Trailer thumbnail</string>
+    <string name="cast">The Cast</string>
+    <string name="trailers">Trailers</string>
+    <string name="user_reviews">User Reviews</string>
+    <string name="favorites">Favorites</string>
+    <string name="bottom_navigation_border">Bottom navigation border</string>
+    <string name="no_favorites">Empty. you haven\'t added any movies to your favorites yet!</string>
+    <string name="review_author_image">Review author image</string>
+
+    <string name="sort">Display Movies By</string>
+    <string name="sort_key">sort_key</string>
+    <string name="settings">My Preferences</string>
+    <string name="my_fav">My Favourites</string>
+
+    <!--replace your own api key here-->
+    <string name="api_key">620f32e11061d177f87a19db219fb363</string>
+    <string name="language">en-US</string>
+    <string name="m_k_1">Popular</string>
+    <string name="m_k_2">Top Rated</string>
+    <string name="m_k_3">Now Playing</string>
+    <string name="m_k_4">Upcoming</string>
+
+    <string name="m_v_1">popular</string>
+    <string name="m_v_2">top_rated</string>
+    <string name="m_v_3">now_playing</string>
+    <string name="m_v_4">upcoming</string>
+
+    <string name="txt_desc">Tuy nhiên, nhiều người lo ngại với việc hoàn toàn đứng ngoài công tác huấn luyện trong 2 mùa giải đã qua, Zidane có phần</string>
+    <string name="txt_read_more">Read more</string>
+    <string name="txt_show_less">Show less</string>
+
+</resources>

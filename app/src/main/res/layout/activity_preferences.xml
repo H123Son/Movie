@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/inc_toolbar"
+        layout="@layout/toolba" />
+
+    <fragment
+        android:id="@+id/fragment_preference"
+        android:name="com.e1120.movie.SettingsPreferencesFrg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" />
+</LinearLayout>

@@ -1,0 +1,84 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'kotlin-parcelize'
+}
+
+android {
+    namespace 'com.e1120.movie'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.e1120.movie"
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+
+    dataBinding {
+        enabled = true
+    }
+
+    buildFeatures{
+        viewBinding true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    def room_version = "2.1.0"
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+
+
+    // Paging
+    def paging_version = "2.1.0"
+    implementation "androidx.paging:paging-runtime-ktx:$paging_version"
+
+    // Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+    // GSON
+    implementation 'com.google.code.gson:gson:2.9.0'
+
+    // OkHttp
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.3'
+
+    // Glide
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
+    kapt 'com.github.bumptech.glide:compiler:4.15.1'
+
+    // Timber
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+    // Circle ImageView
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    def lifecycle_version = "2.1.0"
+    //noinspection GradleDependency
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+    //noinspection LifecycleAnnotationProcessorWithJava8
+    kapt "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
+    implementation 'androidx.preference:preference-ktx:1.2.1'
+}
